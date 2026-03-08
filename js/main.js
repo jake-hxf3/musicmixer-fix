@@ -26,7 +26,6 @@ function dropped(e) {
         return;
     }
     this.append(currentDragged);
-    currentDragged = null;
 }
 
 
@@ -43,7 +42,7 @@ function dropped(e) {
 //Eventlisteners
 
 seals.forEach(seal => {
-    seal.addEventListener("drag start", dragStart);
+    seal.addEventListener("dragstart", dragStart);
 });
 
 targetZones.forEach(zone => {
